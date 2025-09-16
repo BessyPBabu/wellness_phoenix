@@ -55,7 +55,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-slate-100 group hover:border-emerald-200"
+              className="bg-emerald-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-slate-100 group hover:border-emerald-200"
             >
               <div className="text-emerald-600 mb-6 group-hover:scale-110 transition-transform duration-300">
                 {service.icon}
@@ -89,20 +89,14 @@ const Services = () => {
               Watch Our YouTube Videos
             </h3>
 
-            {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-              
-              <button className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-emerald-600 transition-colors duration-200">
-                Our YouTube Link
-              </button>
-            </div>
+           
 
             {/* YouTube Videos */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <iframe
                   className="w-full h-64"
-                  src="https://www.youtube.com/embed/o67nTj3uLew?si=KRPC2G_R8I85A145"
+                  src="https://www.youtube.com/embed/o67nTj3uLew?si=nnucrg7mok2wFRN6"
                   title="Wellness Video 1"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -112,7 +106,7 @@ const Services = () => {
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <iframe
                   className="w-full h-64"
-                  src="https://www.youtube.com/embed/2C8dJQ47kB4?si=yeodJFMdgOs_CKu0" 
+                  src="https://www.youtube.com/embed/jZAOhCDXY80?si=y4bENCXscBNCucfy" 
                   title="Wellness Video 2"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -122,7 +116,7 @@ const Services = () => {
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <iframe
                   className="w-full h-64"
-                  src="https://www.youtube.com/embed/2C8dJQ47kB4?si=yeodJFMdgOs_CKu0" 
+                  src="https://www.youtube.com/embed/1oVnyu_5aZo?si=Wmw-1IWq9-NYwU7N" 
                   title="Wellness Video 2"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -132,7 +126,7 @@ const Services = () => {
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <iframe
                   className="w-full h-64"
-                  src="https://www.youtube.com/embed/2C8dJQ47kB4?si=yeodJFMdgOs_CKu0" 
+                  src="https://www.youtube.com/embed/KMSwRu_w1vk?si=NcxibEsSm4CZYQdO" 
                   title="Wellness Video 2"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -142,7 +136,7 @@ const Services = () => {
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <iframe
                   className="w-full h-64"
-                  src="https://www.youtube.com/embed/2C8dJQ47kB4?si=yeodJFMdgOs_CKu0" 
+                  src="https://www.youtube.com/embed/q3EV8LsEuNA?si=GHYd_4naI-ox3MTW" 
                   title="Wellness Video 2"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -152,7 +146,7 @@ const Services = () => {
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <iframe
                   className="w-full h-64"
-                  src="https://www.youtube.com/embed/2C8dJQ47kB4?si=yeodJFMdgOs_CKu0" 
+                  src="https://www.youtube.com/embed/e77sdn3h6b4?si=H-Itkg12mhbWty20" 
                   title="Wellness Video 2"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -162,7 +156,7 @@ const Services = () => {
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <iframe
                   className="w-full h-64"
-                  src="https://www.youtube.com/embed/2C8dJQ47kB4?si=yeodJFMdgOs_CKu0" 
+                  src="https://www.youtube.com/embed/PVXYE1wAPVE?si=2g8qCZfgeBmGqatz" 
                   title="Wellness Video 2"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -172,7 +166,7 @@ const Services = () => {
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <iframe
                   className="w-full h-64"
-                  src="https://www.youtube.com/embed/2C8dJQ47kB4?si=yeodJFMdgOs_CKu0" 
+                  src="https://www.youtube.com/embed/1DT1xnRTWX0?si=RZaeDajUJrEQN29Q" 
                   title="Wellness Video 2"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -180,6 +174,38 @@ const Services = () => {
                 ></iframe>
               </div>
             </div>
+            {/* Wellness Highlights Section */}
+            <div className="mt-16">
+              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-6 text-center">
+                Wellness Highlights
+              </h3>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                {/* Replace the video IDs with your own */}
+                {[
+                  "lalBnZAS6oY",
+                  "WiMrOBcGiPM",
+                  "CJOZ-yE-kag",
+                  "1oVnyu_5aZo",
+                  "DWGVPpvJRZM",
+                  "qMtsd8JEl8Y",
+                  "bEgTKcf1Umg",
+                  "Gtb8ac3CyYs",
+                  // "6bmQCGuDfRU",
+                  // "TXE_7c4U920"
+
+                ].map((id, index) => (
+                  <div key={index} className="rounded-2xl overflow-hidden shadow-lg">
+                    <img
+                      src={`https://img.youtube.com/vi/${id}/hqdefault.jpg`}
+                      alt={`Video Thumbnail ${index + 1}`}
+                      className="w-full h-48 object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

@@ -14,7 +14,7 @@ const Contact = () => {
     {
       icon: <Mail className="w-5 h-5" />,
       title: "Email",
-      details: ["support@wellnesshub.com"],
+      details: ["pmsunny1959@gmail.com"],
       bg: "bg-blue-100 text-blue-700"
     },
     {
@@ -26,7 +26,7 @@ const Contact = () => {
     {
       icon: <Clock className="w-5 h-5" />,
       title: "Hours",
-      details: ["Mon-Fri: 8AM-8PM", "Sat-Sun: 9AM-6PM"],
+      details: ["Available 24/7"],
       bg: "bg-orange-100 text-orange-700"
     }
   ];
@@ -48,7 +48,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Info Cards */}
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {contactInfo.map((info, index) => (
             <div
               key={index}

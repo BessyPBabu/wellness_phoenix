@@ -115,7 +115,7 @@ const Testimonials = () => {
 
         {/* Slider */}
         <div className="relative">
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-1 lg:grid-cols-3">
             {getCurrentTestimonials().map((testimonial, index) => (
               <div
                 key={index}

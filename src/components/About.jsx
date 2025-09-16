@@ -50,37 +50,37 @@ const About = () => {
 
 
             <div className="flex flex-col sm:flex-row gap-4">
+              <a href="#contact" className="block">
               <button className="bg-emerald-600 text-white px-8 py-3 rounded-full hover:bg-emerald-700 transition-colors duration-200">
                 Learn More About Us
               </button>
-              <button className="border-2 border-slate-300 text-slate-700 px-8 py-3 rounded-full hover:border-emerald-600 hover:text-emerald-600 transition-colors duration-200">
-                Meet Our Team
-              </button>
+              </a>
+              
             </div>
           </div>
 
           {/* Right Content */}
           <div className="relative">
-            <div className="grid grid-cols-2 gap-6">
-              <div className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-6 overflow-hidden">
                 <img 
                   src={sciVedic1}
                   alt="SCI-VEDIC Wellness Product" 
-                  className="rounded-2xl shadow-lg w-80 h-66 object-cover"
+                  className="rounded-2xl shadow-lg w-full max-w-xs h-[264px] object-cover"
                 />
                 <img 
                   src={sciVedic2}
                   alt="SCI-VEDIC Wellness Product 2" 
-                  className="rounded-2xl shadow-lg w-80 h-66 object-cover"
+                  className="rounded-2xl shadow-lg w-full max-w-xs h-[264px] object-cover"
                 />
               </div>
 
-              <div className="space-y-6 mt-8">
+              <div className="space-y-6 overflow-hidden">
                
                 <img 
                   src={sciVedic4}
                   alt="SCI-VEDIC Wellness Product 4" 
-                  className="rounded-2xl shadow-lg w-80 h-66 object-cover"
+                  className="rounded-2xl shadow-lg w-full max-w-xs h-[264px] object-cover"
                 />
               </div>
 

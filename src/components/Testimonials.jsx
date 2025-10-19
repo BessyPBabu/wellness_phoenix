@@ -2,85 +2,82 @@
 import React, { useState } from "react";
 import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
 
+// Import images from assets folder
+import SusanImg from "../assets/testimonial_pics/DrSusan.jpg";
+import LakshmiImg from "../assets/testimonial_pics/Lakshmi.jpg";
+import LeelaImg from "../assets/testimonial_pics/Leela.jpg";
+import MejoImg from "../assets/testimonial_pics/mejo.jpeg";
+import MeryJoseImg from "../assets/testimonial_pics/MeryJose.jpg";
+import PushpammaImg from "../assets/testimonial_pics/Pushpamma.jpg";
+import Reena2Img from "../assets/testimonial_pics/Reena2.jpg";
+import Saneeesh1Img from "../assets/testimonial_pics/Saneesh1.jpg";
+
+
 const Testimonials = () => {
   const testimonials = [
+    
     {
-      name: "Sarah Johnson",
-      role: "Marketing Executive",
-      image:
-        "https://images.unsplash.com/photo-1494790108755-2616b612b359?auto=format&fit=crop&w=150&q=80",
+      name: "Lakshmi",
+      place: "Perumbavoor",
+      image: LakshmiImg,
       rating: 5,
-      text: "WellnessHub transformed my life completely. The personalized nutrition plan and mental health support helped me overcome years of stress-related issues."
+      text: "കാൽ മുട്ട് തെയ്മാനം മൂലം വര്ഷങ്ങളായി ബുദ്ധിമുട്ടി, 7 ഹോസ്പിറ്റലുകളിൽ മാറി മാറി ചികിത്സ തേടി, അവസാനം  സർജറിയ്ക്ക് വിധേയ ആവാൻ കാത്തു നിൽക്കുമ്പോ ആണ് Sci -Vedic medicine നെ പറ്റി കേൾക്കുന്നത്. സർജറി ചെയ്യാതെ Sci- Vedic Medicine എടുത്ത് തുടങ്ങി. 4 മാസം കൊണ്ട് 80% സൗഖ്യമായി. മുൻപ് യാത്രകൾ ചെയ്യാൻ ബുദ്ധിമുട്ട് നേരിട്ട എനിക്ക് ഇപ്പോൾ ഒറ്റയ്ക്കു ബസിൽ യാത്ര ചെയ്യാനും പുറത്ത് പോകാനും കാൽ സൗഖ്യമായി. ഇതെന്റെ രണ്ടാം ജന്മം ആണ് അതിനു Sci - Vedic  നോട്‌ എത്ര നന്ദി പറഞ്ഞാലും മതിയാവില്ല"
     },
     {
-      name: "Michael Chen",
-      role: "Software Developer",
-      image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80",
+      name: "Leela Krishnankutty",
+      place: "",
+      image: LeelaImg,
       rating: 5,
-      text: "The holistic approach at WellnessHub is incredible. From fitness training to meditation sessions, everything is tailored to my needs."
+      text: "35 കൊല്ലങ്ങൾ പഴക്കമുള്ള മുട്ടുവേദന ആയിരുന്നു എനിക്ക് ഉണ്ടായിരുന്നത്. അലോപ്പതി, ആയുർവ്വേദം, വേദ - സിദ്ധ, യുനാനി, എല്ലാം മരുന്നുകളും എടുത്ത് നോക്കി, അവസാനം 2 വർഷം മുൻപ് സർജറി ചെയ്യാൻ തീരുമിച്ചപ്പോൾ പേടി കാരണം സർജറി വേണ്ട എന്ന് വെച്ചു. 6 മാസം മുൻപ് ആണ് വീഡിയോകളിൽ കൂടി Sci - vedic Medicine നെ പറ്റി കേൾക്കുന്നത്. അന്ന് മുതൽ Product ഉപയോഗിച്ച് തുടങ്ങി. ഇപ്പോൾ സൗഖ്യമായി, നടക്കാൻ കഴിയുന്നുണ്ട് അതുപോലെ വേദനകൾ എല്ലാം തന്നെ മാറി. മുട്ടുവേദനയ്ക് കാരണം ആവുന്ന Over Weight കുറയ്ക്കാനും ഞാൻ തീരുമാനിച്ചു. ആരോഗ്യം തിരികെ തന്ന Sci - Vedic നു നന്ദി"
     },
     {
-      name: "Emily Rodriguez",
-      role: "Teacher",
-      image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80",
+      name: "Mejo",
+      place: "Thrissur",
+      image: MejoImg,
       rating: 5,
-      text: "The community support at WellnessHub is amazing. Group programs and workshops created lasting friendships while helping me develop healthy habits."
+      text: "ഞാൻ 10 വർഷം മുന്നേ ആണ് Sci- Vedic product നെ പറ്റി കേൾക്കുന്നത്. എന്റെ കാൽ വേദന മൂലം ഒരുപാട് ബുദ്ധിമുട്ടിയ സാഹചര്യത്തിൽ ആയിരുന്ന അത്. അന്ന് പ്രോഡക്റ്റ് എടുക്കുകയും പൂർണമായി വേദന മാറുകയും ചെയ്തു. ഞാൻ വെൽഡർ ആയിട്ടാണ് ഒമാനിൽ ജോലി ചെയുന്നത്, ഈ ഇടയ്ക്ക് വീണ്ടും ജോലിയുടെ ഇടയിൽ കാലിനു വീണ്ടും pain ഉണ്ടായപ്പോൾ Sci - Vedic ഇൽ വിശ്വാസം ഉള്ളത് കൊണ്ട് നാട്ടിൽ വന്നു വീണ്ടും Sci - Vedic Medicine എടുത്തു. ഇപ്പോൾ വേദനയ്ക് നല്ല മാറ്റമുണ്ട്"
     },
     {
-      name: "David Thompson",
-      role: "Business Owner",
-      image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80",
+      name: "Mery Jose",
+      place: "Velangad, Kozhikode",
+      image: MeryJoseImg,
       rating: 5,
-      text: "As a busy entrepreneur, I struggled with work-life balance. The lifestyle coaching program helped me prioritize my health without sacrificing my business goals."
+      text: "എനിക്ക് കാൽമുട്ടിനു നീരും കാൽ നിലത്തു കുത്താൻ പറ്റാത്ത അത്രയും വേദനയും ആയിരുന്നു, ഒരുപാട് മരുന്നുകൾ എടുത്തു ഒരു കുറവും തോന്നിയില്ല. അങ്ങനെ Sci - vedic Product നെ പറ്റി കേട്ടു  medicine എടുക്കാൻ തീരുമാനിച്ചു. Sunny Sir ആദ്യം ഒരു മാസത്തെ മെഡിസിൻ തന്നു, അത് കഴിച്ചപ്പോൾ വളരെ  കുറവ് തോന്നി. ഇപ്പോൾ 4 മാസമായി, ഏറെക്കുറെ വേദനയും മാറി വരുന്നു. ഇതുപോലെ വേദന അനുഭവിക്കുന്നത് ഈ Sci- Vedic Product വാങ്ങി സൗഖ്യപ്പെടട്ടെ എന്നാണ് എന്റെ ആഗ്രഹം. ഇതിൽ കൂടി എനിക്ക് അത്ര സൗഖ്യവും, ആശ്വാസവും സന്തോഷവും ആണ് കിട്ടിയത്. ഒരുപാട് നന്ദി"
     },
     {
-      name: "Sophia Patel",
-      role: "Doctor",
-      image:
-        "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=150&q=80",
-      rating: 4,
-      text: "Balancing my hectic schedule with self-care was tough. WellnessHub guided me with stress management and mindfulness practices that truly worked."
-    },
-    {
-      name: "James Anderson",
-      role: "Fitness Trainer",
-      image:
-        "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=150&q=80",
+      name: "Pushpamma ",
+      place: "Alappuzha",
+      image: PushpammaImg, 
       rating: 5,
-      text: "I was impressed by their holistic approach. Not only did I improve my physical health, but my mental well-being also flourished."
+      text: "15 വര്ഷങ്ങളായി മുട്ടുവേദനയാൽ കഷ്ടപ്പെട്ടു. ഒരുപാട് ഹോസ്പിറ്റലിൽ ചികിത്സ തേടി. ആയുർവ്വേദം, ഹോമിയോ, അലോപ്പതി. എല്ലാം മാറി മാറി കഴിച്ചു, മാറ്റം ഒന്നും കണ്ടില്ല. സ്വയം എണീറ്റ് നടക്കാൻ വയ്യാത്ത അവസ്ഥയിൽ ആയിരുന്നു. അങ്ങനെ Sci -Vedic product നെ പറ്റി അറിഞ്ഞു , കഴിച്ചു തുടങ്ങി. ഇപ്പോൾ 4 മാസങ്ങൾ ആയി വേദനയ്ക് പൂർണമായ സൗഖ്യം കിട്ടി. വേദന കൂടാതെ യാത്രകൾ സുഖമായി ചെയ്യാൻ കഴിയുന്നു. നന്ദിയുണ്ട് ഒരുപാട്"
     },
     {
-      name: "Olivia Martin",
-      role: "Graphic Designer",
-      image:
-        "https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?auto=format&fit=crop&w=150&q=80",
+      name: "Reena",
+      place: "",
+      image: Reena2Img, 
       rating: 5,
-      text: "The creativity workshops and stress-relief programs made me more productive at work. I feel inspired every day now."
+      text: "മുട്ടുവേദന ആയിരുന്നു എന്റെ പ്രശ്നം. വർഷങ്ങൾ ആയിട്ടുള്ള വേദന സഹിച് മടുത്തു പല ഹോസ്പിറ്റലിലും ചികിൽസിച്ചു, അവസാനം സർജറി അല്ലാതെ വേറെ നിവൃത്തി ഇല്ല എന്ന സാഹചര്യത്തിൽ ആണ് യൂട്യൂബിൽ Sunny സർ ടെ വീഡിയോകൾ വഴി Sci - Vedic product നെപ്പറ്റി അറിയുന്നത്. മരുന്ന് കഴിച്ചു തുടങ്ങി 5 മാസം ആയപോഴേക്കും കാലിന്റെ നീരൊക്കെ മാറിതുടങ്ങിരുന്നു. ഞാൻ over Weight കുറച്ചു. മുൻപ് എനിക്ക് പള്ളിയിൽ പോകാനോ ജോലിക് പോകാനോ ഒന്നും കഴിയില്ലാരുന്നു ഇപ്പോൾ എല്ലാം ചെയ്യാൻ എന്നെകൊണ്ട് പറ്റുന്നുണ്ട്. ഈ product എനിക്ക് വളരെ ആശ്വാസവും സൗഖ്യവും നൽകുന്നുണ്ട്.  സാറിനോടും sci - Vedic നോടും നന്ദിയുണ്ട്"
     },
     {
-      name: "Daniel Lee",
-      role: "College Student",
-      image:
-        "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=150&q=80",
-      rating: 4,
-      text: "WellnessHub taught me how to manage exam stress and stay fit despite my busy schedule. It's been a game-changer for my studies."
-    },
-    {
-      name: "Isabella Gomez",
-      role: "Nurse",
-      image:
-        "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=150&q=80",
+      name: "Dr.Susan Sabu John",
+      place: "Oman",
+      image: SusanImg,
       rating: 5,
-      text: "Working long shifts was draining, but their wellness plan gave me energy and improved my sleep quality."
+      text: "4 വർഷത്തിൽ ഏറെ ആയി ഈ എന്റെ ക്ലിനിക്കിൽ വരുന്നവർക് ഞാൻ Recommend ചെയ്യാറുണ്ട് . കാരണം ഒരിക്കലും മാറില്ല എന്ന് കരുതിയ Joint pain, Psoriasis, Auto Immunity രോഗങ്ങൾക് ഒരുപാട് ഫലപ്രദമാണ് ഈ മെഡിസിൻസ്. റിസൾട്ട്‌ കണ്ട് അറിയുന്നത് കൊണ്ട് 100% വിശ്വസിക്കാം"
     },
+    {
+      name: "Saneesh",
+      place: "Chambakulam, Alappuzha",
+      image: Saneeesh1Img, 
+      rating: 5,
+      text: "എന്റെ ശരീരത്തിൽ 5 വര്ഷങ്ങളായി ഉണ്ടായിരുന്ന സോറിയാസിസിൽ നിന്ന് മോചനം ലഭിച്ചു. കൈ ചുരുട്ടി സ്വയം ഭക്ഷണം കഴിക്കാൻ പോലും കഴിയില്ലാരുന്നു. എന്നാൽ Sci -Vedic Medicine എടുത്ത് തുടങ്ങി 11 മത്തെ മാസം മുതൽ മാറ്റം കണ്ടു തുടങ്ങി, 20 ദിവസം ആയപോഴേക്കും ഭൂരിഭാഗവും സൗഖ്യമായി. Sci - vedic Team നോട്‌ ഒരുപാട് നന്ദിയുണ്ട്."
+    },
+    
   ];
 
   // Slider logic
   const [currentIndex, setCurrentIndex] = useState(0);
-  const itemsPerSlide = 3;
+  const itemsPerSlide = 2;
   const totalSlides = Math.ceil(testimonials.length / itemsPerSlide);
 
   const nextSlide = () => {
@@ -115,7 +112,7 @@ const Testimonials = () => {
 
         {/* Slider */}
         <div className="relative">
-          <div className="grid gap-6 sm:grid-cols-1 lg:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-1 lg:grid-cols-2">
             {getCurrentTestimonials().map((testimonial, index) => (
               <div
                 key={index}
@@ -131,11 +128,12 @@ const Testimonials = () => {
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover border-2 border-white"
+                    loading="lazy"
+                    className="w-20 h-20 rounded-full object-cover border-2 border-white"
                   />
                   <div className="ml-3">
                     <h4 className="text-lg font-bold">{testimonial.name}</h4>
-                    <p className="text-sm text-emerald-100">{testimonial.role}</p>
+                    <p className="text-sm text-emerald-100">{testimonial.place}</p>
                   </div>
                 </div>
 

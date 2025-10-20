@@ -1,8 +1,7 @@
 // components/Footer.jsx
 import React from 'react';
-import { Phone, MapPin, Heart, ArrowUp} from 'lucide-react';
+import { Phone, MapPin, Heart, ArrowUp } from 'lucide-react';
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-
 import Logo from '/Phoenix_logo.svg';
 
 const Footer = () => {
@@ -45,20 +44,34 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center">
-              <a href="#" target="_blank">
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 <img src={Logo} className="logo w-60 h-auto" alt="Phoenix logo" />
               </a>
             </div>
-            
+
             {/* Contact Info */}
-            <div className="space-y-3 mt-4">
-              <div className="flex items-center space-x-3">
-                <Phone size={16} className="text-emerald-400" />
-                <span className="text-slate-300">+91 9446065105</span>
+            <div className="space-y-4 mt-4 text-[15px] leading-relaxed">
+              <div className="flex items-start space-x-3">
+                <Phone size={18} className="text-emerald-400 mt-1" />
+                <span className="text-slate-200 font-medium">+91 9446065105</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <MapPin size={16} className="text-emerald-400" />
-                <span className="text-slate-300">Roma villa, Panangadu P O, Ernakulam</span>
+
+              <div className="flex items-start space-x-3">
+                <MapPin size={18} className="text-emerald-400 mt-1" />
+                <p className="text-slate-200 max-w-xs md:max-w-sm">
+                  <strong>Registered Office:</strong><br />
+                  Roma Villa, Panangadu P.O, Ernakulam
+                </p>
+              </div>
+
+              <div className="flex items-start space-x-3">
+                <MapPin size={18} className="text-emerald-400 flex-shrink-0 mt-1.5" />
+                <p className="text-slate-200 max-w-xs md:max-w-sm">
+                  <strong>Clinic:</strong><br />
+                  Phoenix Ancient Wisdom Ayurveda & Wellness Clinic,<br />
+                  (Opp. Bharat Petroleum Pump), Vallikattu Road, Kundannur,<br />
+                  Maradu P.O, Ernakulam
+                </p>
               </div>
             </div>
           </div>
@@ -86,7 +99,7 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.services.map((link, index) => (
                 <li key={index}>
-                  <a 
+                  <a
                     href={link.href}
                     className="text-slate-300 hover:text-emerald-400 transition-colors duration-200"
                   >
@@ -103,7 +116,7 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.company.map((link, index) => (
                 <li key={index}>
-                  <a 
+                  <a
                     href={link.href}
                     className="text-slate-300 hover:text-emerald-400 transition-colors duration-200"
                   >

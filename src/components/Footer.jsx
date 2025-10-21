@@ -22,6 +22,8 @@ const Footer = () => {
     ],
   };
 
+  const currentYear = new Date().getFullYear();
+
   const socialLinks = [
     { 
     icon: <FaFacebook size={26} />, 
@@ -139,7 +141,7 @@ const Footer = () => {
         <div className="border-t border-slate-700 pt-8">
           <div className="text-center">
             <p className="text-slate-400 mb-4">
-              © 2025 Phoenix International. All rights reserved.
+             © {currentYear} Phoenix International. All rights reserved.
             </p>
             <div className="flex justify-center items-center space-x-2 text-slate-400">
               <span>Made with</span>

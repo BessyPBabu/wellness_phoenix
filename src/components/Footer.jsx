@@ -23,9 +23,16 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: <FaFacebook size={20} />, href: '#', name: 'Facebook' },
-    { icon: <FaInstagram size={20} />, href: '#', name: 'Instagram' },
-    { icon: <FaLinkedin size={20} />, href: '#', name: 'LinkedIn' }
+    { 
+    icon: <FaFacebook size={26} />, 
+    href: 'https://www.facebook.com/share/1JYuGwnXGf/', 
+    name: 'Facebook' 
+  },
+  { 
+    icon: <FaInstagram size={26} />, 
+    href: 'https://www.instagram.com/pulivelikadavilmathew?igsh=MWwzZzNvcHc4ZjR0eg==', 
+    name: 'Instagram' 
+  },
   ];
 
   return (

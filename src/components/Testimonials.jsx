@@ -11,6 +11,8 @@ import MeryJoseImg from "../assets/testimonial_pics/MeryJose.jpg";
 import PushpammaImg from "../assets/testimonial_pics/Pushpamma.jpg";
 import Reena2Img from "../assets/testimonial_pics/Reena2.jpg";
 import Saneeesh1Img from "../assets/testimonial_pics/Saneesh1.jpg";
+import PushpavallyImg from "../assets/testimonial_pics/Pushpavally.jpg";
+import lakshmi2Img from "../assets/testimonial_pics/lakshmi2.jpg";
 
 
 const Testimonials = () => {
@@ -71,6 +73,20 @@ const Testimonials = () => {
       image: Saneeesh1Img, 
       rating: 5,
       text: "എന്റെ ശരീരത്തിൽ 5 വര്ഷങ്ങളായി ഉണ്ടായിരുന്ന സോറിയാസിസിൽ നിന്ന് മോചനം ലഭിച്ചു. കൈ ചുരുട്ടി സ്വയം ഭക്ഷണം കഴിക്കാൻ പോലും കഴിയില്ലാരുന്നു. എന്നാൽ Sci -Vedic Product എടുത്ത് തുടങ്ങി 11 മത്തെ ദിവസം മുതൽ മാറ്റം കണ്ടു തുടങ്ങി, 20 ദിവസം ആയപോഴേക്കും ഭൂരിഭാഗവും സൗഖ്യമായി. Sci - vedic Team നോട്‌ ഒരുപാട് നന്ദിയുണ്ട്."
+    },
+    {
+      name: "Pushpavally Teacher",
+      place: "St. Augustin High School Road, Aroor, Alappuzha",
+      image: PushpavallyImg, 
+      rating: 5,
+      text: "30 വര്ഷങ്ങളായി ഞാൻ മുട്ടുവേദനയാൽ നരകിച്ചിരുന്നു. സ്വയം എഴുനേൽക്കാനോ, നടക്കാനോ കഴിയില്ലാരുന്നു.പ്രാഥമിക ആവശ്യങ്ങൾക് പോലും പരസഹായം ആവശ്യമായി വന്നു. രാത്രികളിൽ ബെഡിൽ നിന്നും താഴെയിറങ്ങി തറയിൽ കൂടി നിരങ്ങി ഭിത്തിയിൽ പിടിച്ചു നിരങ്ങി നിരങ്ങി ടോയ്‌ലറ്റിൽ പോയി വരാറായിരുന്നു പതിവ്. അങ്ങനെ ഒരിക്കൽ വീഡിയോകൾ വഴി sci -vedic Product നെ പറ്റി അറിയുകയും product എടുത്ത് തുടങ്ങുകയും ചെയ്തു. 6 മാസങ്ങൾ കൊണ്ട് എനിക്ക് അത്ഭുതമായ മാറ്റം ആണ് ഉണ്ടായത്. സ്വയം എഴുനേൽക്കാനും നടക്കാനും ഒകെ സാധിച്ചു. 74 വയസുള്ളപ്പോഴാണ് ഈ പ്രോഡക്റ്റ് കഴിക്കാൻ തുടങ്ങിയത്, ഇപ്പോൾ 77 വയസ്സായി ഇതുവരെ ഒരു മരുന്നും എടുത്തിട്ടില്ല. ഇപ്പോ ഞാൻ ഒരു കട നടത്തി ഉപജീവിക്കുന്നു. ഇത്രെയും ജീവിതം മടക്കി നൽകിയ sci - vedic നു നന്ദി"
+    },
+    {
+      name: "Lakshmi P V",
+      place: "Padinjarethil, Alakkad, Kannur",
+      image: lakshmi2Img, 
+      rating: 5,
+      text: "കഴിഞ്ഞ 15 വർഷങ്ങൾ മുട്ടുവേദന യ്ക്ക് ചികിത്സ തേടി, സർജറി ചെയ്യാനുള്ള പണമില്ലാതെ വിഷമിച്ചു. ചെയ്തുകൊണ്ടിരുന്ന തൊഴിലുറപ്പ് ജോലിക് പോലും പോവാൻ കഴിയാതിരുന്ന സാഹചര്യത്തിൽ ആണ് Sci - Vedic Product  പറ്റി അറിയുന്നത്.  അന്ന് മുതൽ product എടുത്ത് തുടങ്ങുകയും ചെയ്തു. ഇപ്പോ 4 മത്തെ മാസം ആയപോഴേക്കും മുട്ടുവേദന കുറയുകയും തൊഴിലുറപ്പിനും പോയി തുടങ്ങുകയും ചെയ്തു. പൂർണമായി സൗഖ്യമാകാൻ തുടർന്നും പ്രോഡക്റ്റ് എടുത്ത് കൊണ്ടിരിക്കുന്നു. Sci - vedic നോട്‌ ഹൃദയം നിറഞ്ഞ നന്ദിയുണ്ട്"
     },
     
   ];

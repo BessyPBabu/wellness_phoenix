@@ -13,6 +13,8 @@ import Reena2Img from "../assets/testimonial_pics/Reena2.jpg";
 import Saneeesh1Img from "../assets/testimonial_pics/Saneesh1.jpg";
 import PushpavallyImg from "../assets/testimonial_pics/Pushpavally.jpg";
 import lakshmi2Img from "../assets/testimonial_pics/lakshmi2.jpg";
+import AbdurahmanImg from "../assets/testimonial_pics/Abdurahman.jpg";
+import jojiImg from "../assets/testimonial_pics/joji.png";
 
 
 const Testimonials = () => {
@@ -87,6 +89,20 @@ const Testimonials = () => {
       image: lakshmi2Img, 
       rating: 5,
       text: "കഴിഞ്ഞ 15 വർഷങ്ങൾ മുട്ടുവേദന യ്ക്ക് ചികിത്സ തേടി, സർജറി ചെയ്യാനുള്ള പണമില്ലാതെ വിഷമിച്ചു. ചെയ്തുകൊണ്ടിരുന്ന തൊഴിലുറപ്പ് ജോലിക് പോലും പോവാൻ കഴിയാതിരുന്ന സാഹചര്യത്തിൽ ആണ് Sci - Vedic Product  പറ്റി അറിയുന്നത്.  അന്ന് മുതൽ product എടുത്ത് തുടങ്ങുകയും ചെയ്തു. ഇപ്പോ 4 മത്തെ മാസം ആയപോഴേക്കും മുട്ടുവേദന കുറയുകയും തൊഴിലുറപ്പിനും പോയി തുടങ്ങുകയും ചെയ്തു. പൂർണമായി സൗഖ്യമാകാൻ തുടർന്നും പ്രോഡക്റ്റ് എടുത്ത് കൊണ്ടിരിക്കുന്നു. Sci - vedic നോട്‌ ഹൃദയം നിറഞ്ഞ നന്ദിയുണ്ട്"
+    },
+    {
+      name: "Abdurahman",
+      place: "vallakadavu, Thiruvananthapuram",
+      image: AbdurahmanImg, 
+      rating: 5,
+      text: "31 വർഷങ്ങൾ ആയി സോറിയാസിസിന്റെ തീവ്രമായ പ്രയാസം അനുഭവിച്ചു വന്ന വ്യക്തിയായിരുന്നു ഞാൻ.വർഷങ്ങൾ ആയി സൗദിയിൽ ജോലിയിൽ ആയിരുന്നു. അങ്ങനെ ഇരിക്കുമ്പോഴാണ് sci -vedic product നെ പറ്റി കേൾക്കുന്നതും, തുടർന്നു സാറിനെ ബന്ധപ്പെടുന്നതും. Product എടുത്ത് 2 മാസം കഴിഞ്ഞപ്പോൾ തന്നെ മാറ്റങ്ങൾ കണ്ടു തുടങ്ങി, 4 മത്തെ മാസം ആയപ്പോൾ പൂർണമായ സൗഖ്യം ലഭിച്ചു. എന്റെ മാറ്റങ്ങളുടെയും സൗഖ്യത്തിന്റെയും ഫോട്ടോസ് ഞാൻ കൊടുത്തിട്ടുണ്ട്. ഇതുപോലെ സോറിയാസിസ്‌  അനുഭവിക്കുന്നവർ sci - vedic product എടുത്താൽ ഉറപ്പായും സൗഖ്യമാകും.എനിക്ക് പൂർണമായി സൗഖ്യമായതിൽ സന്തോഷമുണ്ട്  അതുപോലെ നന്ദിയും"
+    },
+    {
+      name: "Joji",
+      place: "Angamaly",
+      image: jojiImg, 
+      rating: 5,
+      text: "15 വർഷങ്ങളിൽ ഏറെയായി സോറിയാസിസ്‌ മൂലം ഒരുപാട് വിഷമിച്ചു. ഞാൻ സൗദിയിൽ ജോലിയിൽ ആയിരുന്നു. എന്റെ റിക്കവറി ഫോട്ടോസ് ഞാൻ ഷെയർ ചെയ്തിട്ടുണ്ട്, അതിൽ കാണുന്നത് പോലെ കാലിൽ വൃണം പോലെയും ഉണ്ടായിരുന്നു.  കാലിൽ മാത്രമല്ല കൈയിലും പുറത്തും നെഞ്ചിലും ഒകെ കൊണ്ട് വളരെ ബുദ്ധിമുട്ടിയിരുന്നു. ഞാൻ sci - vedic product എടുത്ത് 2 മാസം ആയപോഴേക്കും നല്ല മാറ്റം ഉണ്ടായി, 3 മാസം ആയപ്പോൾ പൂർണമായി സൗഖ്യമായി. നന്ദിയുണ്ട് ഒരുപാട്"
     },
     
   ];

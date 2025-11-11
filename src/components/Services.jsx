@@ -204,6 +204,43 @@ const Services = () => {
                   </div>
                 ))}
               </div>
+              
+            </div>
+            <div className="mt-16">
+              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-6 text-center">
+                Recovery Stories
+              </h3>
+
+              {/* Image Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+                {[
+                  "src/assets/recovery/Abdurahman.jpg",
+                  "src/assets/recovery/abdu1recovery.jpg",
+                  "src/assets/recovery/abdu2recovery.jpg",
+                  "src/assets/recovery/abdu3recovery.jpg",
+                  "src/assets/recovery/joji.png",
+                  "src/assets/recovery/joji1recovery.jpg",
+                  "src/assets/recovery/joji2recovery.jpg",
+                  "src/assets/recovery/joji3recovery.jpg",
+                ].map((src, index) => (
+                  <div
+                    key={index}
+                    className={`rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex justify-center items-center ${
+                  ""
+                    }`}
+                  >
+                    <img
+                      src={src}
+                      alt={`Recovery Image ${index + 1}`}
+                      className={`${
+                        index === 0 || index === 4
+                          ? "w-40 h-40 object-cover rounded-full hover:scale-105 transition-transform duration-300"
+                          : "w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
+                      }`}
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
 
           </div>

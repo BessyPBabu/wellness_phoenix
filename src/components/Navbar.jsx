@@ -23,8 +23,8 @@ const Navbar = () => {
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
     if (isMobile) {
-      if (window.confirm("Do you want to call +91 9446065105?")) {
-        window.location.href = "tel:+919446065105";
+      if (window.confirm("Do you want to call +91 9778365105?")) {
+        window.location.href = "tel:+919778365105";
       }
     } else {
       window.location.href = "#contact";

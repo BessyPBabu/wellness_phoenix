@@ -8,19 +8,19 @@ const Contact = () => {
     {
       icon: <Phone className="w-5 h-5" />,
       title: "Phone",
-      details: ["+91 9446065105"],
+      details: [" 0498 43181848 - Clinic Landline","+91 9778365105 - Clinic Mobile","+91 9446065105 - Sunny P M"],
       bg: "bg-emerald-100 text-emerald-700"
     },
     {
       icon: <Mail className="w-5 h-5" />,
       title: "Email",
-      details: ["pmsunny1959@gmail.com"],
+      details: ["phoenixinternational1959@gmail.com","pmsunny1959@gmail.com"],
       bg: "bg-blue-100 text-blue-700"
     },
     {
       icon: <MapPin className="w-5 h-5" />,
       title: "Location",
-      details: ["Roma Villa", "Panangad, Ernakulam"],
+      details: ["Phoenix Ancient Wisdom Ayurveda & Wellness Clinic"," (Opp. Bharat Petroleum Pump), Vallikattu Road, Kundannur,Maradu P.O, Ernakulam"],
       bg: "bg-purple-100 text-purple-700"
     },
     {

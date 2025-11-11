@@ -32,6 +32,17 @@ const Services = () => {
       "Personalized skin care routines"]
     }
   ];
+  const images = [
+    "/images/Abdurahman.jpg",
+    "/images/abdu1recovery.jpg",
+  "/images/abdu2recovery.jpg",
+  "/images/abdu3recovery.jpg",
+  "/images/joji.png",
+  "/images/joji1recovery.jpg",
+  "/images/joji2recovery.jpg",
+  "/images/joji3recovery.jpg",
+
+];
 
   return (
     <section id="services" className="py-16 lg:py-24 bg-white">
@@ -191,8 +202,7 @@ const Services = () => {
                   "qMtsd8JEl8Y",
                   "bEgTKcf1Umg",
                   "Gtb8ac3CyYs",
-                  // "6bmQCGuDfRU",
-                  // "TXE_7c4U920"
+
 
                 ].map((id, index) => (
                   <div key={index} className="rounded-2xl overflow-hidden shadow-lg">
@@ -213,16 +223,7 @@ const Services = () => {
 
               {/* Image Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-8">
-                {[
-                  "src/assets/recovery/Abdurahman.jpg",
-                  "src/assets/recovery/abdu1recovery.jpg",
-                  "src/assets/recovery/abdu2recovery.jpg",
-                  "src/assets/recovery/abdu3recovery.jpg",
-                  "src/assets/recovery/joji.png",
-                  "src/assets/recovery/joji1recovery.jpg",
-                  "src/assets/recovery/joji2recovery.jpg",
-                  "src/assets/recovery/joji3recovery.jpg",
-                ].map((src, index) => (
+                {images.map((src, index) => (
                   <div
                     key={index}
                     className={`rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex justify-center items-center ${

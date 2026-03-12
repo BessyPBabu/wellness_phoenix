@@ -2,6 +2,7 @@
 import React from 'react';
 import { ArrowRight, Play, Star } from 'lucide-react';
 import prImage from "../assets/pr.webp";
+import { FaFacebook } from "react-icons/fa";
 
 
 const Hero = () => {
@@ -53,10 +54,10 @@ const Hero = () => {
               </button>
             </a>
 
-            <a href="#services" className="block mt-4 md:mt-0">
-              <button className="border-2 border-slate-200 text-slate-700 px-8 py-4 rounded-full hover:border-emerald-600 hover:text-emerald-600 transition-all duration-200 flex items-center justify-center">
-                <Play size={20} className="mr-2" />
-                Our Services and Videos
+            <a href="https://www.facebook.com/share/1JYuGwnXGf/" className="block mt-4 md:mt-0">
+              <button className="bg-emerald-600 text-white px-8 py-4 rounded-full hover:bg-emerald-700 transition-all duration-200 flex items-center justify-center group">
+                <FaFacebook size={22} className="mr-2" />
+                Watch Our Videos On Facebook
               </button>
             </a>
             </div>

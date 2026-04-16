@@ -1,6 +1,6 @@
 // components/Services.jsx
 import React from 'react';
-import { Apple , Activity, Droplet } from 'lucide-react';
+import { Apple , Activity, Droplet ,Eye} from 'lucide-react';
 
 const Services = () => {
   const services = [
@@ -30,7 +30,16 @@ const Services = () => {
       features: ["Herbal skincare treatments",
       "Immune system support",
       "Personalized skin care routines"]
-    }
+    },
+    {
+      icon: <Eye className="w-8 h-8" />,
+      title: "Eye Treatment",
+      description: "SCI-VEDIC eye wellness programs designed to support vision health naturally without injections or surgery. Suitable for conditions such as diabetic retinopathy, glaucoma, cataract, eye strain, and blurred vision. Includes traditional Panchakarma therapies, eye strengthening practices, and nutritional guidance including support for iron deficiency and overall eye wellness.",
+      features: ["Natural vision improvement",
+      "Personalized eye wellness plans",
+      "Lifestyle and nutrition guidance for eye health"]
+    },
+
   ];
   const images = [
     "/images/Abdurahman.jpg",
@@ -42,6 +51,12 @@ const Services = () => {
   "/images/joji2recovery.jpg",
   "/images/joji3recovery.jpg",
 
+];
+const testimonialVideos = [
+ "https://www.facebook.com/reel/1410084094203743",
+ "https://www.facebook.com/reel/2019099435308951",
+ "REEL_LINK_3",
+ "REEL_LINK_4"
 ];
 
   return (
@@ -188,33 +203,29 @@ const Services = () => {
             {/* Wellness Highlights Section */}
             <div className="mt-16">
               <h3 className="text-2xl lg:text-3xl font-bold text-white mb-6 text-center">
-                Wellness Highlights
+                Recovery Testimonials
               </h3>
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-                {/* Replace the video IDs with your own */}
-                {[
-                  "lalBnZAS6oY",
-                  "WiMrOBcGiPM",
-                  "CJOZ-yE-kag",
-                  "1oVnyu_5aZo",
-                  "DWGVPpvJRZM",
-                  "qMtsd8JEl8Y",
-                  "bEgTKcf1Umg",
-                  "Gtb8ac3CyYs",
 
+                {testimonialVideos.map((url, index) => (
 
-                ].map((id, index) => (
-                  <div key={index} className="rounded-2xl overflow-hidden shadow-lg">
-                    <img
-                      src={`https://img.youtube.com/vi/${id}/hqdefault.jpg`}
-                      alt={`Video Thumbnail ${index + 1}`}
-                      className="w-full h-48 object-cover"
-                    />
+                  <div key={index} className="rounded-2xl overflow-hidden shadow-lg bg-black">
+
+                    <iframe
+                      src={`https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(url)}&show_text=false`}
+                      className="w-full"
+                      style={{ aspectRatio: "9/16" }}
+                      scrolling="no"
+                      frameBorder="0"
+                      allowFullScreen
+                    ></iframe>
+
                   </div>
+
                 ))}
+
               </div>
-              
             </div>
             <div className="mt-16">
               <h3 className="text-2xl lg:text-3xl font-bold text-white mb-6 text-center">

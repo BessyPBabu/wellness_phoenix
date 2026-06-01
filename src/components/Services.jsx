@@ -55,8 +55,12 @@ const Services = () => {
 const testimonialVideos = [
  "https://www.facebook.com/reel/1410084094203743",
  "https://www.facebook.com/reel/2019099435308951",
- "REEL_LINK_3",
- "REEL_LINK_4"
+ "https://www.facebook.com/reel/1600522851024363",
+ "https://www.facebook.com/watch/?v=901475909441489",
+ "https://www.facebook.com/reel/884141644449476",
+ "https://www.facebook.com/watch/?v=1574148080537946",
+ "https://www.facebook.com/watch/?v=771008175769414",
+ "https://www.facebook.com/reel/1146061480753781"
 ];
 
   return (
@@ -200,6 +204,34 @@ const testimonialVideos = [
                 ></iframe>
               </div>
             </div>
+
+            {/* Clinic Inauguration Video */}
+            {/* Clinic Inauguration Video */}
+            <div className="mt-16">
+              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-6 text-center">
+                Clinic Inauguration
+              </h3>
+
+              <div className="flex justify-center">
+                <div className="w-full md:w-4/5 lg:w-3/4 xl:w-2/3 rounded-2xl overflow-hidden shadow-lg bg-black">
+                  <iframe
+                    src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F32293409420304794%2F&show_text=false&width=560&t=0"
+                    className="w-full"
+                    style={{
+                      border: "none",
+                      overflow: "hidden",
+                      aspectRatio: "16/9",
+                    }}
+                    scrolling="no"
+                    frameBorder="0"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+            </div>
+
+
             {/* Wellness Highlights Section */}
             <div className="mt-16">
               <h3 className="text-2xl lg:text-3xl font-bold text-white mb-6 text-center">
@@ -227,6 +259,8 @@ const testimonialVideos = [
 
               </div>
             </div>
+
+            
             <div className="mt-16">
               <h3 className="text-2xl lg:text-3xl font-bold text-white mb-6 text-center">
                 Recovery Stories

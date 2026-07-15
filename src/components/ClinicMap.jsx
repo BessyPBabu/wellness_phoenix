@@ -2,27 +2,26 @@
 
 import React, { useCallback, useState, useMemo } from "react";
 import { GoogleMap, Marker, InfoWindow, useJsApiLoader } from "@react-google-maps/api";
-import { GOOGLE_MAPS_KEY } from "../config";
+
 const containerStyle = {
   width: "100%",
   height: "450px",
 };
 
-// Hardcoded coordinates (no need for geocoding requests)
 const locations = [
   {
     id: 1,
-    name: "Clinic",
-    address: "Opp. Bharat Petroleum Pump, Kundannur",
-    position: { lat: 9.93838389483182, lng: 76.32165961757538 },
-    url: "https://maps.app.goo.gl/your-clinic-link-1",
+    name: "Phoenix Ancient Wisdom Ayurveda & Wellness Clinic",
+    address: "Opp. Bharat Petroleum Pump, Vallikattu Road, Kundannur",
+    position: { lat: 9.938587176765195, lng: 76.32125330495346 },
+    url: "https://maps.app.goo.gl/ppPXVjJEtcJP1ns3A",
   },
   {
     id: 2,
-    name: "Wellness Center",
-    address: "Phoenix Ayurvedic & Wellness Center, Backside of Indian Oil Pump, Maradu",
-    position: { lat: 9.938597785041788, lng: 76.32558531970903 },
-    url: "https://maps.app.goo.gl/your-wellness-center-link-2",
+    name: "Phoenix Ayurveda and Wellness Center",
+    address: "Backside of Indian Oil Pump, Convent Road, Maradu",
+    position: { lat: 9.938309816439123, lng: 76.32566749889568 },
+    url: "https://maps.app.goo.gl/6sfnYEkhSLRqXMSB9",
   },
 ];
 
@@ -53,7 +52,7 @@ const ClinicMap = () => {
   const { isLoaded, loadError } = useJsApiLoader({
     id: "google-map-script",
     
-    googleMapsApiKey: GOOGLE_MAPS_KEY, 
+    googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY, 
   });
 
   const center = useMemo(() => ({ lat: 9.93834, lng: 76.32335 }), []);
